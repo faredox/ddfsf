@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MudroCasino - Игра</title>
+</head>
+<body>
+  <h1>MudroCasino</h1>
+  <h2>Игра в кости</h2>
+  <p>Ваш баланс: {{ balance }} монет</p>
+  <form method="POST" action="/game/result">
+    <input type="hidden" name="user_id" value="{{ user_id }}">
+    <label for="bet">Сумма ставки:</label>
+    <input type="number" id="bet" name="bet" required>
+    <button type="submit">Сделать ставку</button>
+  </form>
+</body>
+</html>
